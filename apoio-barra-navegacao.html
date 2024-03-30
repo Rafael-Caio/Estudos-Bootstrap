@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+
+		<title>Bootstrap - Navegação</title>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+  	</head>
+
+	<body>
+
+		<!-- classes NAVEGAÇÃO - nav
+		Tipos de navegação:(acrescentamos na <ul>)
+			nav-pills: aplica arredondamento nos itens ativos (active).
+			nav-tabs: aplica abas nos itens.
+		opções de alinhamento: (acrescentamos na <ul>, esquerda é padrão)
+			justify-content-center (meio)
+			justify-content-end (final)
+			flex-column (deixa em colunas)
+		-->
+		<h2>Navegação simples / abas</h2>
+		<!-- colocamos a class "nav" na <ul> e colocamos a classe "nav-item" no <li> e no <a>
+		colocamos a class "nav-link" -->
+		<ul class="nav nav-pills flex-column"><!-- nav-tabs-->
+			<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+			<li class="nav-item"><a class="nav-link " href="#">Sobre</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+			<li class="nav-item"><a class="nav-link disabled" href="#">Contatos</a></li>
+		</ul>
+		
+
+		<h2>Barra de navegação simples</h2><!-- classe navbar -->
+		<!-- na classe nav colocamos a classe navbar -->
+		<!-- a class navbar-expand-sm (md, lg, xl) determina em que tamanho de tela esta configuração
+			 irá ser aplicada -->
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<!-- logo -->
+			<a href="#" class="navbar-brand">Chalé Hotel</a><!-- navbar-logo determina que é logo,
+			retirando cor e formatação de link -->
+
+			<!-- navegação -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Sobre</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Serviços</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!-- BARRA NAVEGAÇÃO RESPONSIVO -->
+		<h2>Barra de navegação com menu responsivo</h2>
+		<!-- a class navbar-expand-sm (md, lg, xl) determina em que tamanho de tela esta configuração
+			 irá ser aplicada -->
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<!-- logo -->
+			<a href="#" class="navbar-brand">Chalé Hotel</a><!-- navbar-brand determina que é logo,
+			retirando cor e formatação de link -->
+
+			<!-- Menu Hamburguer -->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+				<span class="navbar-toggler-icon"></span>
+				<!-- o data-target é o botão que você quer ocultar quando clicar -->
+				
+			</button>
+
+			<!-- navegação -->
+			<div class="collapse navbar-collapse" id="nav-target">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Serviços</a>
+					</li>
+				</ul>
+			</div>
+
+			
+		</nav>  
+
+		
+		<!-- NAVEGAÇÃO COM FORMULÁRIO -->
+		<h2>Barra de navegação com formulário</h2>
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<!-- logo -->
+			<a href="#" class="navbar-brand">Chalé Hotel</a><!-- navbar-brand determina que é logo,
+			retirando cor e formatação de link -->
+
+			<!-- Menu Hamburguer -->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+				<span class="navbar-toggler-icon"></span>
+				<!-- o data-target é o botão que você quer ocultar quando clicar -->
+				
+			</button>
+
+			<!-- navegação -->
+			<div class="collapse navbar-collapse" id="navegacao">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Serviços</a>
+						
+					</li>
+				</ul>
+				<!-- Formulário -->
+				<form class="form-inline">
+					<input type="text" class="form-control" placeholder="pesquisar....">
+					<button class="btn btn-outline-success">ok</button>
+				</form>
+			</div>
+
+			
+		</nav>  
+
+
+		<!-- BARRA NAVEGAÇÃO DROPDOWN -->
+		<h2>Barra de navegação com menu dropdown</h2>
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<!-- logo -->
+			<a href="#" class="navbar-brand">Chalé Hotel</a><!-- navbar-brand determina que é logo,
+			retirando cor e formatação de link -->
+
+			<!-- Menu Hamburguer -->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao2">
+				<span class="navbar-toggler-icon"></span>
+				<!-- o data-target é o botão que você quer ocultar quando clicar -->
+				
+			</button>
+
+			<!-- navegação -->
+			<div class="collapse navbar-collapse" id="navegacao2">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Sobre</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+						<div class="dropdown-menu">
+							<a href="" class="dropdown-item">Serviço1</a>
+							<a href="" class="dropdown-item">Serviço2</a>
+							<a href="" class="dropdown-item">Serviço3</a>
+						</div>
+					</li>
+				</ul>
+				
+			</div>	
+		</nav>  
+
+		
+		<!--Cores
+		opções: bg-primary, bg-secondary, bg-success, bg-info,
+		bg-warning, bg-danger, bg-light, bg-dark
+		-->
+		<h2>Cores</h2>
+		<!-- na classe nav colocamos a classe navbar -->
+		<!-- a class navbar-expand-sm (md, lg, xl) determina em que tamanho de tela esta configuração
+			 irá ser aplicada -->
+			 <!-- alicamos cores utilizando a class bg-dark/ primary/ secondary...-->
+			 <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+				<!-- logo -->
+				<a href="#" class="navbar-brand">Chalé Hotel</a><!-- navbar-logo determina que é logo,
+				retirando cor e formatação de link -->
+	
+				<!-- navegação -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Serviços</a>
+					</li>
+				</ul>
+			</nav>
+
+		<!--Alinhamentos
+		opções: fixed-top, fixed-bottom, sticky(so tem top)
+		-->
+		<h2>Alinhamentos</h2>
+		<nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-warning">
+			<!-- logo -->
+			<a href="#" class="navbar-brand">Chalé Hotel</a><!-- navbar-logo determina que é logo,
+			retirando cor e formatação de link -->
+
+			<!-- navegação -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Sobre</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Serviços</a>
+				</li>
+			</ul>
+		</nav>
+
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		   Etiam et libero id erat tristique fermentum placerat a erat. 
+		   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+		   Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. 
+		   Vestibulum ut malesuada nibh.
+		</p>
+
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		   Etiam et libero id erat tristique fermentum placerat a erat. 
+		   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+		   Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. 
+		   Vestibulum ut malesuada nibh.
+		</p>
+
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		   Etiam et libero id erat tristique fermentum placerat a erat. 
+		   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+		   Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. 
+		   Vestibulum ut malesuada nibh.
+		</p>
+
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		   Etiam et libero id erat tristique fermentum placerat a erat. 
+		   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+		   Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. 
+		   Vestibulum ut malesuada nibh.
+		</p>
+
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		   Etiam et libero id erat tristique fermentum placerat a erat. 
+		   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+		   Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. 
+		   Vestibulum ut malesuada nibh.
+		</p>
+
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		   Etiam et libero id erat tristique fermentum placerat a erat. 
+		   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+		   Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. 
+		   Vestibulum ut malesuada nibh.
+		</p>
+
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

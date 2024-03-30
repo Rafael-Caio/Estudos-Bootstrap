@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <title>Bootstrap - formulários</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+
+    <body style="margin-bottom: 200px;padding: 16px;">
+
+        
+        <!-- formulários 
+             classe: form-group (cria um espaçamento entre os itens do fomulário)
+             classe: form-control-<opcoes> (aplica formatações na caixa input)
+             opções: sm, lg (controla o tammanho do fomulário)
+        -->
+        <form>
+            
+            <!-- caixas de texto -->
+            <!-- class form-group cria espaçamentos entre os itens do formulário -->
+            <div class="form-group">
+                <label for="usuario">Usuário</label>
+                <!-- class form-control aplica formatações na caixa de input -->
+                <input class="form-control form-control-sm" type="text" id="usuario" placeholder="Digite seu usuário">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <!-- o atributo readonly aplica cor destaque para a caixa input onde ele esta sendo
+                     aplicado -->
+                <!-- o readonly funciona nos elementos que tem a class form-control -->
+                <input class="form-control form-control-lg" type="email" id="email" placeholder="Digite seu email" readonly>
+                <!-- a class form-text aplica a formatação padrão de textos para formulários -->
+                <small class="form-text">Email será validado</small><!-- a tag <small> aplica um pequeno texto ao lado da caixa input -->
+            </div>
+
+            <!-- select -->
+            <!-- aplicamos o form-group na div que abraça o group-->
+            <div class="form-group">
+                <label for="estados">Estados</label>
+                <!-- colocamos o form-control na tag que determina a função da tag, no caso a <select> -->
+                <select class="form-control" id="estados">
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>...</option>
+                </select>
+            </div>
+
+            <!-- textarea -->
+            <!-- aplicamos o form-group na div que abraça o group-->
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <!-- colocamos o form-control na tag que determina a função da tag, no caso a <textarea> -->
+                <!-- o atributo rows determina a quantidade de linhas visiveis dentro do textarea -->
+                <textarea class="form-control" id="mensagem" rows="3"></textarea>
+            </div>
+
+            <!-- file input -->
+            <div class="form-group">
+                <label for="arquivo">Arquivo</label>
+                <!-- o input type file é utilizado para criar input de seleção de arquivos -->
+                <!-- utilizamos o form-group-file pois estamo aplicando ao unput seletor de arquivos -->
+                <input class="form-control-file" type="file" id="arquivo">
+            </div>
+
+
+            <!-- Custom file input -->
+            <!-- cria um input file customizado -->
+            <!-- Ao invés de utilizar o class form-group, nos utilizamos o class custom-file-->  
+            <div class="custom-file">
+                <!-- no label utilizamos a class custom-file-label -->
+                <label class="custom-file-label">Selecione arquivo</label>
+                <!-- no input utilizamos a class custom-file-input  -->
+                <input class="custom-file-input" type="file" id="arquivo">
+                
+            </div>
+            <br><br>
+
+            <!-- range -->
+            <!-- utilizamos a class form-group -->
+            <div class="form-group">
+                <label id="range">Satisfação</label>
+                <!-- no input utilizamos a class custom-range -->
+                <input class="custom-range" type="range" 
+                id="range" min="1" max="5">
+            </div>
+
+            <!-- button -->
+            <input class="btn btn-primary" type="submit" value="Salvar">
+
+        </form>
+        <br><br>
+
+        <!-- Formulário inline -->
+        <!-- colocamos a class form-inline na tag <form> -->
+        <form class="form-inline">
+            <!-- nos inputs colocamos a class form-control -->
+            <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
+            <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+            <input class="btn btn-primary" type="submit" value="Logar">
+        </form>
+        <br><br>
+
+        <!-- 
+        Validação de formulário 
+        Classes: is-valid, is-invalid, invalid-feedback, valid-feedback
+        -->
+        <form>
+            
+            <div class="form-group">
+                <label for="email-usuario">email</label>
+                <!-- a class is-valid informa que o email foi validado,
+                     a caixa de texto fica com broda verde indicando validação -->
+                <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite seu e-mail">
+                <div class="valid-feedback"><!-- formatação para  o texto válido (verde) -->
+                    E-mail válido
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="senha-usuario">Senha</label>
+                <!-- a class is-invalid informa que o email foi validado,
+                     a caixa de texto fica com broda vermelha indicando invalidação -->
+                <input class="form-control is-invalid" type="email" id="senha-usuario" placeholder="Digite sua senha">
+                <div class="invalid-feedback"><!-- formatação para  o texto inválido (vermelho) -->
+                    Senha inválida
+                </div>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Logar">
+
+        </form>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+
+        <title>Bootstrap - Alertas e barra de progresso</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+
+    <body style="margin-bottom: 200px;padding: 16px;">
+
+        
+        <h2>Alertas</h2>
+        <!-- criamos uma div e utilizamos a class alert, para indicar que é um alerta -->
+        <!-- utilizamos a class alert-<primary, secondary, info, danger, warning..>, para
+            determinar cores -->
+        <div class="alert alert-primary">
+            <strong>Primary</strong> você tem uma postagem pendente!
+        </div>
+
+        <div class="alert alert-secondary">
+            <strong>Secondary</strong> você tem uma postagem pendente!
+        </div>
+
+        <div class="alert alert-success">
+            <strong>Success</strong> você tem uma postagem pendente!
+        </div>
+
+        <div class="alert alert-info">
+            <strong>Info</strong> você tem uma postagem pendente!
+        </div>
+
+        <div class="alert alert-warning">
+            <strong>Warning</strong> você tem uma postagem pendente!
+        </div>
+
+        <div class="alert alert-danger">
+            <strong>Danger</strong> você tem uma postagem pendente!
+        </div>
+
+        <div class="alert alert-light">
+            <strong>Light</strong> você tem uma postagem pendente!
+        </div>
+
+        <div class="alert alert-dark">
+            <strong>Dark</strong> você tem uma postagem pendente!
+        </div>
+
+
+        <h2>Alerta com botão fechar</h2>
+        <!-- utilizamos as mesmas class do alerta e acrescentamos mais uma class 
+             alert-dismissible -->
+        <!-- na tag button utilizamos a class close e acrescentamos o atributo
+             data-dismiss com o valor alert, para que o button execute sua 
+             função de fechar -->
+        <div class="alert alert-success alert-dismissible">
+            <button class="close" type="button" data-dismiss="alert">
+                &times;<!-- este &times; escreve um X -->
+            </button>
+            <strong>Fechar</strong> Alerta com botão fechar
+        </div>
+
+        <br>
+        <br>
+        
+
+        <h2>Alerta com mais conteúdos</h2>
+        <div class="alert alert-dark">
+        
+            <h4>Título</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, 
+                eu consectetur tortor faucibus sed.</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, 
+                eu consectetur tortor faucibus sed.</p>
+
+        </div>
+
+        <br>
+        <br>
+
+
+        <h2>Barra de progresso</h2>
+        <!-- Na div principal utilizamos a class progress indicando que reppresentará 
+            progresso de carregamento, download e outros-->
+        <div class="progress">
+            <!-- utilizamos a class progress bar para indicar a ppresença da barra de progresso -->
+            <div class="progress-bar" style="width: 50%;">50%</div><!-- lembrando que o valor do w (width) é em % 
+                                                      e não precisa do simbolo exemplo: w-50 -->
+                                                 <!-- podemos utilizar também o style="width: 50%;"-->
+        </div>
+
+        <br>
+
+        <div class="progress">
+            <!-- utilizamos a class bg-<primary, secondary, success, info, danger...> 
+                 ppara determinar uma cor ppara esta barra -->
+            <div class="progress-bar bg-success" style="width: 40%;">40%</div>
+        </div>
+
+        <br>
+
+        <div class="progress">
+            <!-- utilizamos a class bg-<primary, secondary, success, info, danger...> 
+                 para determinar uma cor ppara esta barra -->
+            <div class="progress-bar bg-info" style="width: 30%;">30%</div>
+        </div>
+
+        <br>
+
+        <h2>Altura</h2>
+        <!-- ppodemos determinar alturas usando o style="height: valor;"-->
+        <div class="progress" style="height: 2px;">
+            <div class="progress-bar bg-danger" style="width: 30%;"></div>
+        </div>
+        
+
+        <h2>Listrado</h2>
+        <div class="progress">
+            <!-- acrescentamos a class progress-bar-atriped para criar uma barra de carregamento
+                listrada -->
+            <div class="progress-bar progress-bar-striped bg-warning" style="width: 70%;">70%</div>
+        </div>
+        
+
+        <h2>Animado</h2>
+        <div class="progress">
+            <!-- acrescentamos a class progress-bar-animated para criar uma barra de carregamento
+                animada -->
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 60%;">60%</div>
+        </div>
+        
+
+        <h2>Múltiplas barras</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 30%;">Painel princial (30% de 30)</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 40%;">Fotos (40% de 50)</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 20%;">Musicas (20% de 100)</div>
+        </div>
+            
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+
+        <title>Bootstrap - Tabelas e Paginação</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    </head>
+
+    <body style="margin-bottom: 200px;padding: 16px;">
+
+        <h2>Tabelas: table</h2>
+        <!-- applicamos a class table e o conteúdo fica melhor configurado como tabela -->
+        <table class="table">
+            <thead><!-- tag utilizada para agrupar tags de cabecalho da table, 
+                        não participa do scroll ou seja, fica fixo -->
+                <tr>
+                    <th>#</th>
+                    <th>Produto</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody><!-- tag utilizada para agrupar elementos da table, 
+                        e particia do scroll -->
+                <tr>
+                    <td>00001</td>
+                    <td>Iphone X</td>
+                    <td>Apple</td>
+                    <td>R$ 6.999</td>
+                </tr>
+                <tr>
+                    <td>00002</td>
+                    <td>Nexus 5</td>
+                    <td>LG</td>
+                    <td>R$ 999</td>
+                </tr>
+                <tr>
+                    <td>00003</td>
+                    <td>Notebook VAIO</td>
+                    <td>Sony</td>
+                    <td>R$ 1.999</td>
+                </tr>
+            </tbody>
+            <!-- existe também o <tfoot> que é usado para totalizados da tabela -->
+        </table>
+
+        <h2>Tabela escura: table-dark</h2>
+        <!-- para acrescentar cor a tabela acrescentamos 
+             a class table-<primary, dark, secondary...> -->
+        <table class="table table-dark">
+            <thead><!-- tag utilizada para agrupar tags de cabecalho da table, 
+                        não participa do scroll ou seja, fica fixo -->
+                <tr>
+                    <th>#</th>
+                    <th>Produto</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody><!-- tag utilizada para agrupar elementos da table, 
+                        e particia do scroll -->
+                <tr>
+                    <td>00001</td>
+                    <td>Iphone X</td>
+                    <td>Apple</td>
+                    <td>R$ 6.999</td>
+                </tr>
+                <tr>
+                    <td>00002</td>
+                    <td>Nexus 5</td>
+                    <td>LG</td>
+                    <td>R$ 999</td>
+                </tr>
+                <tr>
+                    <td>00003</td>
+                    <td>Notebook VAIO</td>
+                    <td>Sony</td>
+                    <td>R$ 1.999</td>
+                </tr>
+            </tbody>
+            <!-- existe também o <tfoot> que é usado para totalizados da tabela -->
+        </table>
+        
+
+        <h2>Tabela com cabeçalho escuro: thead-dark</h2>
+        
+                <table class="table">
+                    <!-- para acrescentar cor no <thead> utilizamos a 
+                         class thead-<primary, dark, secondary...> -->
+                    <thead class="thead-dark"><!-- tag utilizada para agrupar tags de cabecalho da table, 
+                                                   não participa do scroll ou seja, fica fixo -->
+                        <tr>
+                            <th>#</th>
+                            <th>Produto</th>
+                            <th>Marca</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody><!-- tag utilizada para agrupar elementos da table, 
+                                e particia do scroll -->
+                        <tr>
+                            <td>00001</td>
+                            <td>Iphone X</td>
+                            <td>Apple</td>
+                            <td>R$ 6.999</td>
+                        </tr>
+                        <tr>
+                            <td>00002</td>
+                            <td>Nexus 5</td>
+                            <td>LG</td>
+                            <td>R$ 999</td>
+                        </tr>
+                        <tr>
+                            <td>00003</td>
+                            <td>Notebook VAIO</td>
+                            <td>Sony</td>
+                            <td>R$ 1.999</td>
+                        </tr>
+                    </tbody>
+                    <!-- existe também o <tfoot> que é usado para totalizados da tabela -->
+                </table>
+
+        <h2>Tabela com formatações: table-striped (cores alternadas), 
+        table-bordered (acrescenta borda em toda tabela), table-borderless (remove bordas)</h2>
+        <!-- utilizamos as class de formatação diretamente na tag <table>-->
+        <!-- as formatações podem ser combinadas -->
+        <table class="table table-bordered table-striped">
+            <thead><!-- tag utilizada para agrupar tags de cabecalho da table, 
+                                           não participa do scroll ou seja, fica fixo -->
+                <tr>
+                    <th>#</th>
+                    <th>Produto</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody><!-- tag utilizada para agrupar elementos da table, 
+                        e particia do scroll -->
+                <tr>
+                    <td>00001</td>
+                    <td>Iphone X</td>
+                    <td>Apple</td>
+                    <td>R$ 6.999</td>
+                </tr>
+                <tr>
+                    <td>00002</td>
+                    <td>Nexus 5</td>
+                    <td>LG</td>
+                    <td>R$ 999</td>
+                </tr>
+                <tr>
+                    <td>00003</td>
+                    <td>Notebook VAIO</td>
+                    <td>Sony</td>
+                    <td>R$ 1.999</td>
+                </tr>
+            </tbody>
+            <!-- existe também o <tfoot> que é usado para totalizados da tabela -->
+        </table>
+
+        
+
+        <h2>Classes contextuais: table-success, table-danger, table...</h2>
+        <!-- aplicamos esta formatações no local da table que queremos destacar com cor
+             no caso na tr (table row)-->
+        <table class="table table-bordered">
+            <thead><!-- tag utilizada para agrupar tags de cabecalho da table, 
+                                           não participa do scroll ou seja, fica fixo -->
+                <tr>
+                    <th>#</th>
+                    <th>Produto</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody><!-- tag utilizada para agrupar elementos da table, 
+                        e particia do scroll -->
+                    <!-- formatação aplicada na tr -->
+                <tr class="table-success">
+                    <td>00001</td>
+                    <td>Iphone X</td>
+                    <td>Apple</td>
+                    <td>R$ 6.999</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>00002</td>
+                    <td>Nexus 5</td>
+                    <td>LG</td>
+                    <td>R$ 999</td>
+                </tr>
+                <tr class="table-info">
+                    <td>00003</td>
+                    <td>Notebook VAIO</td>
+                    <td>Sony</td>
+                    <td>R$ 1.999</td>
+                </tr>
+            </tbody>
+            <!-- existe também o <tfoot> que é usado para totalizados da tabela -->
+        </table>
+
+        <h2>Tabela pequena: table-sm</h2>
+        <!-- utilizamos para determinar o tamanho da tabela -->
+        <table class="table table-sm table-bordered">
+            <thead><!-- tag utilizada para agrupar tags de cabecalho da table, 
+                                           não participa do scroll ou seja, fica fixo -->
+                <tr>
+                    <th>#</th>
+                    <th>Produto</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody><!-- tag utilizada para agrupar elementos da table, 
+                        e particia do scroll -->
+                    <!-- formatação aplicada na tr -->
+                <tr>
+                    <td>00001</td>
+                    <td>Iphone X</td>
+                    <td>Apple</td>
+                    <td>R$ 6.999</td>
+                </tr>
+                <tr>
+                    <td>00002</td>
+                    <td>Nexus 5</td>
+                    <td>LG</td>
+                    <td>R$ 999</td>
+                </tr>
+                <tr>
+                    <td>00003</td>
+                    <td>Notebook VAIO</td>
+                    <td>Sony</td>
+                    <td>R$ 1.999</td>
+                </tr>
+            </tbody>
+            <!-- existe também o <tfoot> que é usado para totalizados da tabela -->
+        </table>
+
+        <h2>Tabela responsiva: table-responsive</h2>
+        <div class="table-responsive">
+        <!-- utilizamos para determinar o tamanho da tabela -->
+            <table class="table table-sm table-bordered">
+                <thead><!-- tag utilizada para agrupar tags de cabecalho da table, 
+                                            não participa do scroll ou seja, fica fixo -->
+                    <tr>
+                        <th>#</th>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Marca</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+
+                <tbody><!-- tag utilizada para agrupar elementos da table, 
+                            e particia do scroll -->
+                        <!-- formatação aplicada na tr -->
+                    <tr>
+                        <td>00001</td>
+                        <td>Iphone X</td>
+                        <td>Dark</td>
+                        <td>Apple</td>
+                        <td>R$ 6.999</td>
+                    </tr>
+                    <tr>
+                        <td>00002</td>
+                        <td>Nexus 5</td>
+                        <td>Blue</td>
+                        <td>LG</td>
+                        <td>R$ 999</td>
+                    </tr>
+                    <tr>
+                        <td>00003</td>
+                        <td>Notebook VAIO</td>
+                        <td>Yellow</td>
+                        <td>Sony</td>
+                        <td>R$ 1.999</td>
+                    </tr>
+                    
+                </tbody>
+                <!-- existe também o <tfoot> que é usado para totalizados da tabela -->
+            </table>
+            <nav><!-- mostrando que podemos combinar com a <table> -->
+                <!-- colocamos na <ul> a class pagination, para indicar a paginação -->
+                <ul class="pagination">
+                    <!-- na <li> colocamos a class page-item pois 
+                         é o item que armazena o link para outra página -->
+                    <li class="page-item">
+                        <!-- colocamos a class page-link para indicar o link presente na paginação
+                            que te levará para outra página -->
+                        <a href="" class="page-link">Anterior</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">Próximo</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </div>
+        
+        <h2>Paginação: pagination, page-item, page-link - active, disabled 
+            (colocamos ambos dentro da &lt;li&gt;)</h2>
+        <nav>
+            <!-- colocamos na <ul> a class pagination, para indicar a paginação -->
+            <ul class="pagination">
+                <!-- na <li> colocamos a class page-item pois 
+                     é o item que armazena o link para outra página -->
+                <li class="page-item disabled">
+                    <!-- colocamos a class page-link para indicar o link que te levará 
+                         para outra página -->
+                    <a href="" class="page-link">Anterior</a>
+                </li>
+                <li class="page-item active">
+                    <a href="" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Alinhamento: justify-content-ALINHAMENTO(center, end) </h2>
+        <nav>
+            <!-- colocamos na <ul> a class pagination, para indicar a paginação -->
+            <!-- colocamos na <ul> a class justify-content-alinhamento para determinar o
+                 alinhamento dos itens  -->
+            <ul class="pagination justify-content-center"><!-- pode ser justify-content-end -->
+                <!-- na <li> colocamos a class page-item pois 
+                     é o item que armazena o link para outra página -->
+                <li class="page-item disabled">
+                    <!-- colocamos a class page-link para indicar o link que te levará 
+                         para outra página -->
+                    <a href="" class="page-link">Anterior</a>
+                </li>
+                <li class="page-item active">
+                    <a href="" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Tamanho: pagination-TAMANHO(sm, lg) </h2>
+        <nav>
+            <!-- colocamos na <ul> a class pagination, para indicar a paginação -->
+            <!-- colocamos na <ul> a class ppagination-tamanho(sm, lg) para determinar o
+                 tamanho dos itens de paginação -->
+            <ul class="pagination pagination-lg"><!-- pode ser pagination-sm -->
+                <!-- na <li> colocamos a class page-item pois 
+                     é o item que armazena o link para outra página -->
+                <li class="page-item disabled">
+                    <!-- colocamos a class page-link para indicar o link que te levará 
+                         para outra página -->
+                    <a href="" class="page-link">Anterior</a>
+                </li>
+                <li class="page-item active">
+                    <a href="" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+        
+
+        <h2>Setas </h2>
+        <!-- as setas foram aplicadas utilizando html entities &laquo; e &raquo; dentro do
+         <span> -->
+        <nav>
+            <!-- colocamos na <ul> a class pagination, para indicar a paginação -->
+            <!-- colocamos na <ul> a class ppagination-tamanho(sm, lg) para determinar o
+                 tamanho dos itens de paginação -->
+            <ul class="pagination pagination-lg"><!-- pode ser pagination-sm -->
+                <!-- na <li> colocamos a class page-item pois 
+                     é o item que armazena o link para outra página -->
+                <li class="page-item">
+                    <!-- colocamos a class page-link para indicar o link que te levará 
+                         para outra página -->
+                    <a href="" class="page-link">
+                        <span>&laquo;</span>
+                        <!-- a class sr(screem read)-only indica que o texto será detectado apenas
+                             por leitores de texto utilizado por pessoas com deficiencia visual -->
+                        <span class="sr-only">anterior</span>
+                    </a><!-- l de left-->
+                </li>
+                <li class="page-item active">
+                    <a href="" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">
+                        <span>&raquo;</span>
+                        <span class="sr-only">próximo</span>
+                    </a><!-- r de right -->
+                </li>
+            </ul>
+        </nav>
+        
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
